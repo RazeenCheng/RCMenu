@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		51710E1E1C3177AD00705D13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51710E1D1C3177AD00705D13 /* main.m */; };
-		51710E211C3177AD00705D13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51710E201C3177AD00705D13 /* AppDelegate.m */; };
-		51710E241C3177AD00705D13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51710E231C3177AD00705D13 /* ViewController.m */; };
 		51710E271C3177AD00705D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51710E251C3177AD00705D13 /* Main.storyboard */; };
 		51710E291C3177AD00705D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51710E281C3177AD00705D13 /* Assets.xcassets */; };
 		51710E2C1C3177AD00705D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51710E2A1C3177AD00705D13 /* LaunchScreen.storyboard */; };
 		51710E371C3177AD00705D13 /* RCMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51710E361C3177AD00705D13 /* RCMenuTests.m */; };
 		51710E421C3177AD00705D13 /* RCMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51710E411C3177AD00705D13 /* RCMenuUITests.m */; };
+		51C55EF51C3184410011A4B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C55EEF1C3184410011A4B1 /* AppDelegate.m */; };
+		51C55EF61C3184410011A4B1 /* RCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C55EF21C3184410011A4B1 /* RCMenu.m */; };
+		51C55EF71C3184410011A4B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C55EF41C3184410011A4B1 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +38,6 @@
 /* Begin PBXFileReference section */
 		51710E191C3177AD00705D13 /* RCMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51710E1D1C3177AD00705D13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		51710E1F1C3177AD00705D13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		51710E201C3177AD00705D13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		51710E221C3177AD00705D13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51710E231C3177AD00705D13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		51710E261C3177AD00705D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51710E281C3177AD00705D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51710E2B1C3177AD00705D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,12 @@
 		51710E3D1C3177AD00705D13 /* RCMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51710E411C3177AD00705D13 /* RCMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCMenuUITests.m; sourceTree = "<group>"; };
 		51710E431C3177AD00705D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C55EEE1C3184410011A4B1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		51C55EEF1C3184410011A4B1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		51C55EF11C3184410011A4B1 /* RCMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCMenu.h; sourceTree = "<group>"; };
+		51C55EF21C3184410011A4B1 /* RCMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCMenu.m; sourceTree = "<group>"; };
+		51C55EF31C3184410011A4B1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		51C55EF41C3184410011A4B1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,7 @@
 		51710E1B1C3177AD00705D13 /* RCMenu */ = {
 			isa = PBXGroup;
 			children = (
-				51710E1F1C3177AD00705D13 /* AppDelegate.h */,
-				51710E201C3177AD00705D13 /* AppDelegate.m */,
-				51710E221C3177AD00705D13 /* ViewController.h */,
-				51710E231C3177AD00705D13 /* ViewController.m */,
+				51C55EED1C3184410011A4B1 /* class */,
 				51710E251C3177AD00705D13 /* Main.storyboard */,
 				51710E281C3177AD00705D13 /* Assets.xcassets */,
 				51710E2A1C3177AD00705D13 /* LaunchScreen.storyboard */,
@@ -138,6 +138,27 @@
 				51710E431C3177AD00705D13 /* Info.plist */,
 			);
 			path = RCMenuUITests;
+			sourceTree = "<group>";
+		};
+		51C55EED1C3184410011A4B1 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				51C55EEE1C3184410011A4B1 /* AppDelegate.h */,
+				51C55EEF1C3184410011A4B1 /* AppDelegate.m */,
+				51C55EF01C3184410011A4B1 /* RCMenu */,
+				51C55EF31C3184410011A4B1 /* ViewController.h */,
+				51C55EF41C3184410011A4B1 /* ViewController.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		51C55EF01C3184410011A4B1 /* RCMenu */ = {
+			isa = PBXGroup;
+			children = (
+				51C55EF11C3184410011A4B1 /* RCMenu.h */,
+				51C55EF21C3184410011A4B1 /* RCMenu.m */,
+			);
+			path = RCMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51710E241C3177AD00705D13 /* ViewController.m in Sources */,
-				51710E211C3177AD00705D13 /* AppDelegate.m in Sources */,
+				51C55EF51C3184410011A4B1 /* AppDelegate.m in Sources */,
+				51C55EF61C3184410011A4B1 /* RCMenu.m in Sources */,
+				51C55EF71C3184410011A4B1 /* ViewController.m in Sources */,
 				51710E1E1C3177AD00705D13 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = razeen.RCMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = razeen.RCMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +520,7 @@
 				51710E481C3177AD00705D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51710E491C3177AD00705D13 /* Build configuration list for PBXNativeTarget "RCMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +529,7 @@
 				51710E4B1C3177AD00705D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51710E4C1C3177AD00705D13 /* Build configuration list for PBXNativeTarget "RCMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +538,7 @@
 				51710E4E1C3177AD00705D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
