@@ -5,7 +5,6 @@
 //  Created by Razeen on 12/28/15.
 //  Copyright © 2015 razeen. All rights reserved.
 //
-
 #import "ViewController.h"
 #import "RCMenu.h"
 
@@ -14,7 +13,9 @@
 }
 
 
-@property (nonatomic, strong)RCMenu *menu;
+@property (nonatomic, strong)RCMenuByDelegate *menu1;
+@property (nonatomic, strong)RCMenuByBlock *menu2;
+
 @property (nonatomic, strong) UIScrollView *ScrollView;
 
 @end
@@ -26,18 +27,13 @@
     
     _menuArray = @[@"小区生活",@"饭后杂坛",@"食尽天下",@"运动健身",@"旅游出行",@"育儿心经",@"情感生活",@"物业攻略",@"装饰装修"];
     
-    [self text1];
+//    [self text1];
+    [self text2];
+    [self textView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-#pragma mark - 利用协议
-- (void)text1{
-    
-    
-    //菜单
-    self.menu = [[RCMenu alloc]initWithOriginY:64 Titles:_menuArray delegate:self];
-    [self.view addSubview:self.menu];
-    
+- (void)textView{
     
     self.ScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 105, RCWidth, RCHeight)];
     self.ScrollView.contentSize = CGSizeMake(RCWidth*9, RCHeight);
@@ -62,10 +58,23 @@
 }
 
 
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - 利用协议
+- (void)text1{
+    //菜单
+    self.menu1 = [[RCMenuByDelegate alloc]initWithOriginY:64 Titles:_menuArray delegate:self];
+    [self.view addSubview:self.menu1];
+}
 //当页面滚动时，视图跟着滚动
 - (void)chageMenuWithIndex:(NSInteger)pageIndex{
-
-    [self.menu menuSelectedAtIndex:pageIndex];
+    
+//    [self.menu1 menuSelectedAtIndex:pageIndex];
+    [self.menu2 menuSelectedAtIndex:pageIndex];
 }
 
 //当菜单滚动结束，视图跟着发生变化
@@ -74,7 +83,7 @@
     NSLog(@"%d",(int)index);
     
     [self.ScrollView setContentOffset:CGPointMake(index*RCWidth, 0) animated:NO];
-
+    
 }
 
 
@@ -84,11 +93,28 @@
     int pageIndex = scrollView.contentOffset.x / scrollView.frame.size.width ;
     
     [self chageMenuWithIndex:pageIndex];
+    
+}
 
+
+#pragma mark -利用block
+- (void)text2{
+    
+    self.menu2 = [[RCMenuByBlock alloc]initWithOriginY:64 Titles:_menuArray];
+    
+    [self.view addSubview:self.menu2];
+    
+    typeof(self)__weak weakSelf = self;
+    
+    self.menu2.selectedItemBlock = ^(NSInteger selectedMenuItem){
+        
+        [weakSelf.ScrollView setContentOffset:CGPointMake(selectedMenuItem*RCWidth, 0) animated:NO];
+        
+    };
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
+
 
 @end
